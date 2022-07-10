@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8F8F8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px auto 1fr;
+  grid-template-areas: "header" "nav" "main";
+}
+body header {
+  grid-area: "header";
+  place-self: center;
+  padding-top: 24px;
+}
+body nav {
+  grid-area: "nav";
+  justify-self: center;
+}
+body nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 0.9rem;
+  padding: 0 5px;
+}
+body nav a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}
+body main {
+  grid-area: "main";
+  justify-self: center;
+  padding: 2px;
+}
+body main h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+body main .links {
+  display: flex;
+  justify-content: space-between;
+}
+body main .links a {
+  text-decoration: none;
+  color: #CC0000;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+body main .links a:hover {
+  color: #a00000;
+  text-decoration: underline;
+}
+body main .loginForm {
+  width: 380px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 30px;
+}
+body main .loginForm form {
+  text-align: center;
+  width: 100%;
+}
+body main .loginForm form input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+body main .loginForm form input.mt {
+  margin-top: 24px;
+}
+body main .loginForm form input[type=submit] {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #CC0000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+body main .loginForm form input[type=submit]:hover {
+  background-color: #a00000;
+}
+body main .loginForm p {
+  font-size: 0.9rem;
+  padding: 0 15px;
+  text-align: center;
+}
+body main .loginForm p a {
+  text-decoration: none;
+  color: #CC0000;
+  font-size: 0.9rem;
+}
+body main .loginForm p a:hover {
+  color: #a00000;
+  text-decoration: underline;
+}/*# sourceMappingURL=app.css.map */
